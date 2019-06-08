@@ -1,0 +1,5 @@
+{
+    "token" : "xoxb-token",
+    "phone" : "",
+    "template" : "Bonjour, nous souhaitons commander :\n%pizzas% \nPour 12h45 c'est possible ?"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "slackbot",
+  "version": "0.0.0",
+  "description": "PizzaMan bot for slack",
+  "main": "bot.js",
+  "dependencies": {
+    "@slack/rtm-api": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BThiebaut/pizzaman.git"
+  },
+  "author": "BThiebaut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BThiebaut/pizzaman/issues"
+  },
+  "homepage": "https://github.com/BThiebaut/pizzaman#readme"
+}

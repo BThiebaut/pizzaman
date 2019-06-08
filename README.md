@@ -1,2 +1,0 @@
-# pizzaman
-slack bot

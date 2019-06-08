@@ -1,7 +1,9 @@
+const db = require('./../db.js');
+
 exports.run = (req, res) => {
     let result = '';
     try {
-        addPizza(req.body.channel_id, req.body.user_name, req.body.text);
+        addPizza(req.body.channel_id, req.body.user_id, req.body.user_name, req.body.text);
     } catch(e) {
         console.log(e);
         result = e;
@@ -13,7 +15,7 @@ exports.run = (req, res) => {
     }
 };
 
-function addPizza(channel, author, text) {
+function addPizza(channel, user, name, text) {
     let regex = /(\S+) (\d+)/g;
     if (!text){
         throw 'Usage : <NomPizza> <dimension>';
@@ -32,5 +34,8 @@ function addPizza(channel, author, text) {
     }
     var pizza = matches[1];
     var taille = matches[2];
-    throw '@'+author+' Ta pizza '+ pizza +' en '+ taille +' cm a bien été ajoutée !';
+
+    let msg = db.add(user, name, pizza, taille);
+
+    throw msg;
 }

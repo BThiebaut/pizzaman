@@ -1,5 +1,5 @@
 {
     "token" : "xoxb-token",
-    "phone" : "",
-    "template" : "Bonjour, nous souhaitons commander :\n%pizzas% \nPour 12h45 c'est possible ?"
+    "phone" : "0123456789",
+    "template" : "Bonjour, nous souhaitons commander : %pizzas% Pour 12h45 c'est possible ?"
 }
